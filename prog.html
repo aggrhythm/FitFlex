@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitFlex</title>
+</head>
+<link rel="stylesheet" href="css/style.css">
+<body>
+    <style>
+        body{
+            margin:0px;
+            padding:0px;
+            background: url(bg.jpg);
+            background-repeat: no-repeat;
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            width: 100%;
+            height: 100%;
+            background-size:cover;
+            color:white;
+        }
+        .left{
+            display:inline-block;
+            position:absolute;
+            left:34px;
+            top:20px;
+
+        }
+        .center{
+            display: block;
+            width: 40%;
+            margin: 10px auto;
+        }
+        .right{
+            display: inline-block;
+            position:absolute;
+            right:30px;
+            top:20px;
+
+        }
+        .navbar{
+            display: inline-block;
+        }
+        .navbar li{
+            display: inline-block;
+            padding: 10px 28px;
+            font-size: 16px;
+        }
+        .navbar li a{
+            text-decoration: none;
+            color: white;
+        }
+        .navbar li a:hover{
+            text-decoration: underline;
+            color: grey;
+        }
+        .left img{
+            filter: invert(100%);
+            width:40px;
+        }
+        .left div{
+            text-align: center;
+            font-size: 15px;
+        }
+        .btn{
+            padding: 4px 8px;
+            margin: 5px 6px;
+            background-color: black;
+            color:white;
+            border: 2px solid grey;
+            font-size:15px ;
+            cursor:pointer;
+            border-radius: 8px;
+        }
+        .btn:hover{
+            background-color: rgb(37, 35, 35);
+        }
+        .container{
+            background-color: rgba(155, 161, 161,0.15);
+            display:inline-block;
+            border:2px solid white;
+            padding: 10px 10px;
+            border-radius:10px;
+            width:30%;
+            height:60%;
+            position: relative;
+            top:30px;
+            float:right;
+            
+
+        }
+        .form input{
+            display: block;
+            padding:5px 10px;
+            margin: 15px auto;
+            width:70%;
+            border:2px solid black;
+            border-radius:2px;
+            text-align: center;
+            font-size: 17px;
+        }
+        .form button{
+            font-size: 18px;
+            display:block;
+            width:75%;
+            margin: 25px auto;
+        }
+        .container h2{
+            margin-top: 40px;
+            text-align: center;
+        }
+        .container:hover{
+            background-color: transparent;
+        }
+    </style>
+    <header class="header">
+        <div class="left">
+            <img src="logo.webp" alt="">
+            <div>FitFlex</div>
+        </div>
+        <div class="center">
+            <ul class="navbar">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="https://www.calculator.net/fitness-and-health-calculator.html" target="_blank">Fitness Calculator</a></li>
+                <li><a href="#">Contact us</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <button class="btn">Call us</button>
+            <button class="btn">Email us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h2>GET OUR MEMBERSHIP</h2>
+        <form action="#">
+            <div class="form"> 
+                <input type="text" name="name" placeholder="Name">
+                <input type="value" name="age"placeholder="Age">
+                <input type="text" name="gender"placeholder="Gender">
+                <input type="text" name="district"placeholder="District">
+                <input type="text" name="phone" placeholder="Contact number">
+                <input type="email" name="email" placeholder="Email Address">
+                <button class="btn">Submit Now</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
